@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./assets/images/favicon cunha.png" type="image/x-icon">
+    <script src="./assets/js/validationLogin.js" defer></script>
+    
+    <title>Cunha Imobiliaria</title>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <img src="./assets/images/logo_imobiliaria_20210602171205.jpg" alt="" class="logo-cunha">
+            <form id="login-form">
+                <div class="input-name">
+                    <div class="input-image"><img src="./assets/images/user_2102647.png" alt=""></div>
+                    <input type="text" id="username" placeholder="Nome de Usuario" minlength="5" required>
+                </div>                
+                <div class="input-password">
+                    <div class="input-image"><img src="./assets/images/web-browser_4616605.png" alt=""></div>
+                    <input type="password" id="password" placeholder="Senha" minlength="8" required>
+                </div>        
+                <p id="error-message"></p>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

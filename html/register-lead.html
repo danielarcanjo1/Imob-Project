@@ -3,8 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/images/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/register-lead.css">
 </head>
 <body>
-        
+        <h1>Cadastro de Leads</h1>
+        <form action="">
+            <div class="content-form-lead">
+                <fieldset>
+                    
+                    <legend><i class="fa fa-users" aria-hidden="true"></i>DADOS DO CLIENTE</legend>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="name">Telefone:</label>
+                        <input type="tel" name="phone" id="phone" required>
+                    </div>
+                    <div>
+                        <label for="name">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>ORIGEM DO LEAD</legend>
+                    <div>
+                        <label for="Date">Data da captura</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div>
+                        <label for="name">Origem</label>
+                        <select name="select">
+                            <option value="1">Não definido</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Campanha</label>
+                        <select name="" id="">
+                            <option value="1">Não definido</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>INTERESSE INICIAL</legend>
+                    <div>
+                        <label for="">Produto</label>
+                        <select name="" id="">
+                            <option value="1">EMpreendimento</option>
+                            <option value="1">Não definido</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">SItuação</label>
+                        <select name="" id="">
+                            <option value="1">Novo lead</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>ATENDENDO O LEAD</legend>
+                    <div>
+                        <label for="">Qualificador</label>
+                        <select name="" id="">
+                            <option value="1">Novo lead</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Corretor</label>
+                        <select name="" id="">
+                            <option value="1">Novo lead</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
 </body>
 </html>

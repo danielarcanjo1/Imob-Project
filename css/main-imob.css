@@ -59,6 +59,7 @@
     gap: 10px;
 
     cursor: pointer;  
+    
 }
 
 .modules-menu span{
@@ -86,6 +87,7 @@
     background-color: rgb(223, 223, 223);
 
     font-size: 24px; 
+    animation: modules 1s;
 }
 
 .modules-menu-content-visible{
@@ -124,6 +126,7 @@
     justify-content: space-between;
     gap: 300px;
 }
+
 .users-online-icon{
     height: 20px;
     width: 20px;
@@ -190,12 +193,21 @@
 }
 
 .leads-content, .scale-content, .reports-content{
-    padding-left: 40px;
-    padding-top: 15px;
-
-    height: 250px;
-    background-color: rgb(231, 231, 231);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    height: 340px;
+    background-color: rgb(230, 225, 225);
     display: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    animation: menu 500ms;
+}
+
+.leads-content span:hover, .scale-content span:hover, .reports-content span:hover{
+    background-color: rgb(211, 211, 211);
+    cursor: pointer;
 }
 
 .leads-icon,.scales-icon,.reports-icon{
@@ -208,12 +220,13 @@
 
 .fa-rotate-90{
     transform: rotate(90);
+    transition: 500ms;
 }
 
-.leads-content-visible{
+.leads-content-visible, .scale-content-visible, .reports-content-visible{
     display:flex;
     flex-direction: column;
-    gap:10px
+    gap:20px;
 }
 
 .leads,.scales,.reports{
@@ -238,4 +251,24 @@
 .img-translate{
     transform:  rotate(90deg);
     transition-duration: 500ms;
+}
+
+
+
+@keyframes menu {
+    0%{
+     transform: translatex(-120px);
+    }
+    100%{
+        transform: translatex(0px);
+    }    
+}
+
+@keyframes modules {
+    0%{
+     transform: translatey(-120px);
+    }
+    100%{
+        transform: translatey(0px);
+    }    
 }

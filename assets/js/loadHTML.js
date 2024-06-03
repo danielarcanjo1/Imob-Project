@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () =>{
-    document.querySelector(".leads").addEventListener("click", () =>{
+    document.querySelector(".register").addEventListener("click", () =>{
         console.log("CLICOU")
         const path = "../html/register-lead.html"
         

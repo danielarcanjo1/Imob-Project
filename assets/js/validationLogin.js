@@ -1,3 +1,4 @@
+
 const form = document.getElementById("login-form");
 
 form.addEventListener("submit", (event) =>{
@@ -8,8 +9,11 @@ form.addEventListener("submit", (event) =>{
     const userName = document.getElementById("username").value
     const userPassword = document.getElementById("password").value
 
+    console.log(userName)
     if(userName === testUserName && userPassword === testPassword){
         window.location.href = "main-imob.html"
+        const sessionName = document.querySelector("session-name")
+        sessionName.innerText = userName
     }else{
         const errorMessage = document.getElementById("error-message")
         errorMessage.textContent = "Usuario e ou senha invalidos"

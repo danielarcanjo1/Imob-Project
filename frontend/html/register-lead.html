@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<body>
+
         <h1>Cadastro de Leads</h1>
-        <form action="">
+        <form class="form-register-lead">
             <div class="content-form-lead">
                 <fieldset>
                     
                     <legend><i class="fa fa-user" aria-hidden="true"></i>DADOS DO CLIENTE</legend>
                     <div>
                         <label for="name">Nome:</label>
-                        <input type="text" name="name" id="name" required>
+                        <input class ="input-lead-name" type="text" name="name" id="lead-name" required>
                     </div>
                     <div>
                         <label for="name">Telefone:</label>
-                        <input type="tel" name="phone" id="phone" required>
+                        <input class="input-lead-phone" type="tel" name="phone" id="lead-phone" required>
                     </div>
                     <div>
                         <label for="name">Email:</label>
-                        <input type="email" name="email" id="email" required>
+                        <input class ="input-lead-email" type="email" name="email" id="lead-email" required>
                     </div>
                 </fieldset>
                 
@@ -25,11 +23,11 @@
                     <legend><i class="fa fa-search" aria-hidden="true"></i>ORIGEM DO LEAD</legend>
                     <div>
                         <label for="Date">Data da captura</label>
-                        <input type="date" name="date" id="date">
+                        <input class="input-lead-capture-date" type="date" name="date" id="date">
                     </div>
                     <div>
                         <label for="name">Origem</label>
-                        <select name="select">
+                        <select class="select-lead" name="select">
                             <option value="1">Não definido</option>
                             <option value="1">1</option>
                             <option value="1">1</option>
@@ -42,7 +40,7 @@
                     </div>
                     <div>
                         <label for="name">Campanha</label>
-                        <select name="" id="">
+                        <select class="select-lead" name="" id="">
                             <option value="1">Não definido</option>
                             <option value="1">1</option>
                             <option value="1">1</option>
@@ -59,7 +57,7 @@
                     <legend><i class="fa fa-cart-plus" aria-hidden="true"></i>INTERESSE INICIAL</legend>
                     <div>
                         <label for="">Produto</label>
-                        <select name="" id="">
+                        <select class="select-lead" name="" id="">
                             <option value="1">Empreendimento</option>
                             <option value="1">Não definido</option>
                             <option value="1">1</option>
@@ -70,9 +68,24 @@
                             <option value="1">1</option>
                         </select>
                     </div>
+
+                    <div>
+                        <label for="">Empreendimento</label>
+                        <select class="select-lead" name="" id="">
+                            <option value="1">Empreendimento</option>
+                            <option value="1">Não definido</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>
+
                     <div>
                         <label for="">Situação</label>
-                        <select name="" id="">
+                        <select class="select-lead" name="" id="">
                             <option value="1">Novo lead</option>
                             <option value="1">1</option>
                             <option value="1">1</option>
@@ -89,7 +102,7 @@
                     <legend><i class="fa fa-users" aria-hidden="true"></i>ATENDENDO O LEAD</legend>
                     <div>
                         <label for="">Qualificador</label>
-                        <select name="" id="">
+                        <select class="select-lead" name="" id="">
                             <option value="1">Novo lead</option>
                             <option value="1">1</option>
                             <option value="1">1</option>
@@ -102,7 +115,7 @@
                     </div>
                     <div>
                         <label for="">Corretor</label>
-                        <select name="" id="">
+                        <select class="select-lead" name="" id="">
                             <option value="1">Novo lead</option>
                             <option value="1">1</option>
                             <option value="1">1</option>
@@ -114,8 +127,6 @@
                         </select>
                     </div>
                 </fieldset>
-                <button type="submit">Cadastrar</button>
+                <button id="button-register" type="submit">Cadastrar</button>
             </div>
         </form>
-</body>
-</html>

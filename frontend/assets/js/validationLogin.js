@@ -9,9 +9,8 @@ form.addEventListener("submit", (event) =>{
     const userName = document.getElementById("username").value
     const userPassword = document.getElementById("password").value
 
-    console.log(userName)
     if(userName === testUserName && userPassword === testPassword){
-        window.location.href = "main-imob.html"
+        window.location.href = "./html/main-imob.html"
         const sessionName = document.querySelector("session-name")
         sessionName.innerText = userName
     }else{

@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
     bottom: 100px;
     height: 100px;
     width: 100%;
@@ -111,9 +112,24 @@
     gap: 300px;
 }
 
-.users-online-icon{
+.brokers-online-icon{
     height: 20px;
     width: 20px;   
+    cursor: pointer;
+}
+
+.brokers-online-moment{
+    height: 50px;
+    width: 150px;
+    background-color: aqua;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;    
+}
+
+.brokers-online-moment-visible{
+    display: none;
 }
 
 .avatar{

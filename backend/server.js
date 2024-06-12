@@ -1,17 +1,16 @@
-const fastify = require('fastify')({
-    logger: true
-  })
-  
-  // Declare a route
-  fastify.get('/', function (request, reply) {
-    reply.send({ hello: 'world' })
-  })
-  
-  // Run the server!
-  fastify.listen({ port: 3000 }, function (err, address) {
-    if (err) {
-      fastify.log.error(err)
-      process.exit(1)
-    }
-    // Server is now listening on ${address}
-  })
+const express = require('express')
+const app = express()
+const port = 3333
+
+const cors = require('cors')
+
+app.get("/", (req,res) =>{
+  res.send
+})
+
+
+app.use(cors())
+
+app.listen(port, () =>{
+    console.log(`server is runing on port ${port} localhost:3333`)
+})

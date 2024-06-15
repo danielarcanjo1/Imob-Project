@@ -3,6 +3,7 @@
     left: 0;
     top:100px;
     width: 300px;
+    z-index: 10;
     height: 100vh;
     background-color: rgb(235, 235, 235);
     padding: 20px;
@@ -49,7 +50,7 @@
 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    animation: menu 500ms ease-in;
+    animation: menu 300ms ease-in;
 }
 .leads-content span, .scale-content span, .reports-content span, .broker-content span, .properties-content span{
    height: 50px;
@@ -99,3 +100,11 @@
     width: 10px;
 }
 
+@keyframes menu{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100px;
+    }
+}

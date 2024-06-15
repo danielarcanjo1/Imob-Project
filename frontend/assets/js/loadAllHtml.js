@@ -1,5 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
- 
 
    function loadAndInsertContent(url, targetSelector) {
         fetch(url)
@@ -14,5 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadAndInsertContent('../assets/../html/top-menu.html', '.top-menu');
     loadAndInsertContent('../assets/../html/navbar.html', '.navbar-right');
-    loadAndInsertContent('../assets../../html/dashboard.html', '.page-content-center');
-});
+    loadAndInsertContent('../assets/../html/dashboard.html', '.page-content-center');

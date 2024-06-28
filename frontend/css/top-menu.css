@@ -2,25 +2,7 @@
     padding: 0;
     margin: 0;
 }
-.top-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    bottom: 100px;
-    height: 100px;
-    width: 100%;
-   
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    
-    border: none;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .top-menu-left{
     display: flex;
@@ -35,6 +17,9 @@
     width: 200px;
 }
 
+.logo-cunha{
+    cursor: pointer;
+}
 .top-menu-right{
     display: flex;
     flex-direction: row;
@@ -57,43 +42,45 @@
 }
 
 .modules-menu span{
-    font-size: 28px;
+    font-size: 20px;
 }
 
 .modules-menu-content{  
     position: absolute;
-    left: 340px;
+    left: 395px;
     top: 70px;
     
 
     display: flex;
     flex-direction: column;
-    gap:10px;
-    align-items:center;
-    justify-content: center; 
     
+    gap: 10px;
     width: 250px;
-    height: 150px;
+    height: 200px;
 
     background-color: rgb(223, 223, 223);
 
-    font-size: 24px; 
-    animation: modules 1s;
+    font-size: 16px; 
+}
+
+.financial,.site,.marketing,.crm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.financial:hover,.site:hover,.marketing:hover,.crm:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    overflow-inline: auto;
 }
 
 .modules-menu-content-visible{
    display: none;
 }
 
-.modules-menu-content span{
-    cursor: pointer;
-    width: 250px;
-
-}
-
-.modules-menu-content span:hover{
-    background-color: rgb(204, 202, 199);
-}
 
 .link-site a{
     text-decoration: none;

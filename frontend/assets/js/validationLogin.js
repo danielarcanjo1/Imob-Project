@@ -14,7 +14,7 @@ form.addEventListener("submit", (event) =>{
         const sessionName = document.querySelector("session-name")
         sessionName.innerText = userName
     }else{
-        const errorMessage = document.getElementById("error-message")
+        const errorMessage = document.querySelector(".error-message")
         errorMessage.textContent = "Usuario e ou senha invalidos"
         errorMessage.style.display = 'block'
     }
@@ -22,12 +22,12 @@ form.addEventListener("submit", (event) =>{
 })
 
 document.getElementById('username').addEventListener('input', () => {
-    document.getElementById('error-message').textContent = ''; 
-    document.getElementById('error-message').style.display = 'none';
+    document.querySelector('.error-message').textContent = ''; 
+    document.querySelector('.error-message').style.display = 'none';
      
 });
   
   document.getElementById('password').addEventListener('input', () => {
-    document.getElementById('error-message').textContent = ''; 
-    document.getElementById('error-message').style.display = 'none'; 
+    document.querySelector('.error-message').textContent = ''; 
+    document.querySelector('.error-message').style.display = 'none'; 
 });

@@ -1,20 +1,6 @@
-.navbar-right{
-    position: fixed;
-    left: 0;
-    top:100px;
-    width: 300px;
-    z-index: 10;
-    height: 100vh;
-    background-color: rgb(235, 235, 235);
-    padding: 20px;
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px;  
-}
 
 .navbar-right-title{
-    font-size: 24px;
+    font-size: 20px;
     color:rgb(0, 0, 0);
     margin-top: 10px;
 }
@@ -49,16 +35,17 @@
     display: none;
 
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     animation: menu 300ms ease-in;
 }
-.leads-content span, .scale-content span, .reports-content span, .broker-content span, .properties-content span{
+.leads-content a, .scale-content a, .reports-content a, .broker-content a, .properties-content a{
    height: 50px;
    padding: 10px;
    text-align: left;
+   font-size: 16px;
 }
 
-.leads-content span:hover, .scale-content span:hover, .reports-content span:hover, .broker-content span:hover, .properties-content span:hover{
+.leads-content a:hover, .scale-content a:hover, .reports-content a:hover, .broker-content a:hover, .properties-content a:hover{
     background-color: rgb(211, 211, 211);
     cursor: pointer;
 }
@@ -80,7 +67,7 @@
     display:flex;
     flex-direction: column;
     gap:5px;   
-    height: 100px;
+    height: fit-content;
     border-left: 3px solid rgb(125, 139, 165);
 }
 
@@ -105,6 +92,6 @@
         height: 0;
     }
     to{
-        height: 100px;
+        height: 50px;
     }
 }

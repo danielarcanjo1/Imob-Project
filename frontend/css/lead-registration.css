@@ -1,25 +1,22 @@
 
-h1{
-    margin-bottom: 40px;
-}
+.container{
 
-.form-register-lead{
-    width: 1600px;
-    height: 910px;
 }
 .content-form-lead{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     background-color: rgb(201, 201, 201);
-    width: 2000px;
-    border-radius: 4px;
+    width: 1560px;
+    height: 710px;
+   
     padding: 20px;
 }
 
 fieldset{
     border: none;
     display: flex;
+    align-items: center;
     gap: 50px;
 }
 
@@ -42,11 +39,11 @@ label{
 }
 
 .input-lead-name,.input-lead-phone, .input-lead-email, .input-lead-capture-date,.select-lead{
-    width: 600px;
-    height: 50px;
+    width: 400px;
+    height: 40px;
     padding: 10px;
 
-    font-size: 20px;
+    font-size: 14px;
 
     border-radius: 4px;
 
@@ -54,11 +51,12 @@ label{
 }
 
 #button-register{
-    margin-top: 40px;
-    width: 240px;
-    height: 50px;
-    padding: 10px;
-    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
 }

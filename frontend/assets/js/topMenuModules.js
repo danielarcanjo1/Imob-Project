@@ -5,17 +5,19 @@ setTimeout(() =>{
     const menuMoulesContent = document.querySelector(".modules-menu-content")
     const onlineBrokers = document.querySelector(".brokers-online-icon")
     const onlineBrokersMoment = document.querySelector('.brokers-online-moment')
+    const logoCunha = document.querySelector(".logo-cunha")
     
+    logoCunha.addEventListener("click", () =>{
+        window.location.href = '../html/main-imob.html'
+    })
+
     menuModules.addEventListener("click", () =>{
         menuMoulesContent.classList.toggle("modules-menu-content-visible") 
     })
+},1000)
     
-    onlineBrokers.addEventListener('mouseenter', () =>{
-        onlineBrokersMoment.classList.toggle("brokers-online-moment-visible")
-    })
-    onlineBrokers.addEventListener('mouseleave', () =>{
-        onlineBrokersMoment.classList.toggle("brokers-online-moment-visible")
-    })
     
 
-},1000)
+    
+
+

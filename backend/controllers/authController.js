@@ -1,6 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user');
+const { DATE } = require('sequelize');
 
 exports.register = async (req, res) => {
     const { userName, userPassword, userRole } = req.body;
@@ -18,18 +19,22 @@ exports.register = async (req, res) => {
 };
 
 exports.login = async (req, res) => {
-    const { username, password } = req.body;
+    const { userName, userPassword } = req.body;
     try {
-        const user = await User.findOne({ where: { username } });
+        const user = await User.findOne({ where: { userName } });
         if (!user) {
-            return res.status(400).send('Invalid credentials');
+            return res.status(400).json({Message: 'User Invalid'});
         }
-        const isPasswordValid = await bcrypt.compare(password, user.password);
+
+        const isPasswordValid = await bcrypt.compare(userPassword, user.password);
+        
         if (!isPasswordValid) {
-            return res.status(400).send('Invalid credentials');
+            return res.status(401).json({Message: 'Password invalid'});;
         }
+
         const token = jwt.sign({ userId: user.id, role: user.role }, 'SECRET_KEY');
         res.send({ token });
+    
     } catch (error) {
         res.status(500).send('Error logging in');
     }

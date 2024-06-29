@@ -10,10 +10,9 @@ setTimeout(() => {
         const userName = document.getElementById('user-registration-name').value
         const userPassword = document.getElementById('user-registration-password').value
         const userRole = document.getElementById('user-registration-role').value
-
-        console.log(userName,userPassword,userRole)
             
         const data = { userName, userPassword, userRole}
+        
         try {
             const response = await fetch('http://192.168.0.202:3000/register',{
                 method: 'POST',

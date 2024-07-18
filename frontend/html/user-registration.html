@@ -1,0 +1,18 @@
+
+<h1>Cadastro de Usuarios</h1>
+<form method="post" id="user-registration-form">
+    <label for="user-registration-name">Nome de Usuário:</label>
+    <input type="text" id="user-registration-name">
+    
+    <label for="user-registration-password">Senha:</label>
+    <input type="password" id="user-registration-password">
+    
+    <label for="user-registration-role">Nivel de acesso</label>
+    <select name="user-role" id="user-registration-role">
+        <option value=" "> </option>
+        <option value="admin">Administrador</option>
+        <option value="management">Gerente</option>
+        <option value="broker">Corretor</option>
+    </select>
+    <button type="submit" id="user-registration-button">cadastrar</button>
+</form>

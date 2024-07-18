@@ -7,7 +7,10 @@ const router = express.Router();
 router.post('/register', authController.register);
 router.post('/login', authController.login);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 033385f7d52009a4d62fc170fd91c136515b1f18
 router.get('/admin', authMiddleware.authenticate, authMiddleware.authorize(['admin']), (req, res) => {
     res.send('Welcome Admin');
 });

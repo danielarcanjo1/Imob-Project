@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+<<<<<<< HEAD
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,5 +41,17 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+=======
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "connect-history-api-fallback": "^2.0.0"
+>>>>>>> 033385f7d52009a4d62fc170fd91c136515b1f18
   }
 }

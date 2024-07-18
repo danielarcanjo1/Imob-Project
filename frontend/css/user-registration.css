@@ -1,0 +1,27 @@
+#user-registration-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+form #user-registration-name, form #user-registration-password{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+}
+
+form #user-registration-role{
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#user-registration-button{
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}

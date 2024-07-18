@@ -1,0 +1,66 @@
+
+.container{
+
+}
+.content-form-lead{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(201, 201, 201);
+    width: 1560px;
+    height: 710px;
+   
+    padding: 20px;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+legend{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+.input-lead-name,.input-lead-phone, .input-lead-email, .input-lead-capture-date,.select-lead{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+
+#button-register{
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#button-register:hover{
+    background-color: rgb(185, 185, 185);
+}

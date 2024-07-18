@@ -2,6 +2,7 @@ const express = require('express');
 const sequelize = require('./config');
 const authRoutes = require('./routes/authRoutes');
 const cors = require('cors')
+<<<<<<< HEAD
 const session = require('express-session')
 
 const app = express();
@@ -29,6 +30,16 @@ app.use(session({
 app.post('/register', authRoutes);
 app.post('/login',authRoutes)
 app.get('/broker',authRoutes)
+=======
+
+const app = express();
+app.use(express.json());
+app.use(cors())
+
+
+app.post('/register', authRoutes);
+app.post('/login',authRoutes)
+>>>>>>> 033385f7d52009a4d62fc170fd91c136515b1f18
 
 sequelize.sync().then(() => {
     // app.listen(3000, () => {

@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard-container{
+ 
+    height: 1300px;
+    width: 2019px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+   
+}
+
+
+.leads-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border-top: 1px solid rgba(117, 23, 23, 0.1);
+    
+}
+
+.active-leads, .tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap:30px
+}
+
+.card{
+    padding:4px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    width: 350px;
+    height: 100px;
+    padding: 20px;
+    border-bottom: 4px solid rgb(12, 221, 158);
+    border-radius: 2px;
+}
+
+.bottom-red{
+    border-bottom: 4px solid rgb(255, 0, 0);
+}
+
+.card:hover, .card-funnel:hover{
+    cursor: pointer;
+    top:-2px;
+    box-shadow:0 2px 2px #666;
+    transform: scale(1.1);
+}
+
+.card-informations{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-icon i{
+    color: rgb(24, 24, 23);
+}
+
+.tasks{
+    border-bottom: 1px solid rgba(117, 23, 23, 0.1);
+}
+.salles-funnel{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.row1, .row2, .row3, .row4{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card-funnel{
+    padding:4px;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    width: 350px;
+    height: 140px;
+    padding: 20px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    border-radius: 2px;
+}
+
+.card-informations div span{
+    color: rgb(114, 177, 130); 
+    font-size: 25px;
+}
+
+.card-informations div p{
+    margin-top: 5px;
+    
+    font-size: 18px;
+    color: rgb(0, 0, 0); 
+    
+}
+
+.leads-company{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+}
+
+.leads-company .title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-company{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 18px;
+    border-radius: 4px;
+    
+}
+
+.card-company:hover{
+    cursor: pointer;
+    background-color: rgb(63, 233, 224);
+    box-shadow:0 2px 2px #666;
+    transform: scale(1.1);
+}
+
+.number-leads{
+    min-width: 30px;
+    max-width: fit-content;
+    height: 30px;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: rgb(88, 180, 176);
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.card-company span{
+    margin-right: 75px;
+}
+
+
+.squares{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+}
+
+.square-green{
+    background-color: rgb(12, 221, 158);
+    max-width: fit-content;
+    min-width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.square-yellow{
+    background-color: rgb(255, 238, 0);
+    max-width: fit-content;
+    min-width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.square-red{
+    background-color: red;
+    max-width: fit-content;
+    min-width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}

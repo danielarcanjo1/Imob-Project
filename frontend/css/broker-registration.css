@@ -1,0 +1,98 @@
+main{
+    height: 968px;
+}
+.content-form-broker{
+    background: linear-gradient(90deg, rgb(175, 161, 161) , rgb(197, 197, 197));
+    padding: 20px;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.input-broker{
+    width: 600px;
+    height: 50px;
+    padding: 10px;
+
+    font-size: 17px;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+
+
+#broker-bank{
+    height: 60px;
+    padding: 10px;
+    font-size: 20px;
+    width: 600px;
+    border-radius: 4px;
+
+    outline: none;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    border: none;
+
+    margin-top: 20px;
+}
+
+.broker-input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-broker-agency{
+    width: 80px;
+    height: 60px;
+    padding: 10px;
+
+    font-size: 17px;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+.input-broker-account{
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+
+    font-size: 17px;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+.input-broker-pix{
+    width: 310px;
+    height: 60px;
+    padding: 10px;
+
+    font-size: 17px;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+
+#button-submit-form-broker{
+    height: 60px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 40px;
+    
+    font-size: 22px;
+}
+
+#button-submit-form-broker:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

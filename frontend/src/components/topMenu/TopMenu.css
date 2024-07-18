@@ -1,0 +1,135 @@
+.TopMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.TopMenuLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.LogoCunha {
+    cursor: pointer;
+    width: 140px;
+    height: 40px;
+}
+
+.TopMenuRight {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+.ModulesMenu {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;  
+}
+
+.ModulesMenu span {
+    font-size: 20px;
+}
+
+.ModulesMenuContent {  
+    position: absolute;
+    left: 395px;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    height: 200px;
+    background-color: rgb(223, 223, 223);
+    font-size: 16px; 
+}
+
+.Financial, .Site, .Marketing, .Crm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+}
+
+.Financial:hover, .Site:hover, .Marketing:hover, .Crm:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.ModulesMenuContentVisible {
+    display: none;
+}
+
+.LinkSite a {
+    text-decoration: none;
+    color: black;    
+}
+
+.LinkSite i {
+    margin-left: 1px;
+}
+
+.BrokersOnlineIcon {
+    height: 20px;
+    width: 20px;   
+    cursor: pointer;
+}
+
+.BrokersOnlineMoment {
+    height: 50px;
+    width: 150px;
+    background-color: aqua;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;    
+}
+
+.BrokersOnlineMomentVisible {
+    display: none;
+}
+
+.Avatar {
+    background-color: rgb(199, 21, 21);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid rgb(83, 83, 83); 
+}
+
+.AvatarWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.AvatarWrapper span {
+    font-size: 18px;
+    margin-right: 100px;
+}

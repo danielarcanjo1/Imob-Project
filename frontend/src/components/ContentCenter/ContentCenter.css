@@ -1,0 +1,17 @@
+.ContentCenter{
+    position: relative;
+    left: 270px;
+    top: 80px;
+    
+    height: fit-content;
+    min-height: 822px;
+    width: fit-content;
+    min-width: 100%;
+    background-color: rgba(101, 101, 139, 0.288);
+   
+}
+
+.ContentCenterChildrens{
+    padding: 40px;
+}
+

@@ -1,0 +1,47 @@
+#user-registration-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+form #user-registration-name, form #user-registration-password, form #user-registration-email{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+form #user-registration-role{
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+#user-registration-button{
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#user-registration-button:hover{
+    background-color: rgb(161, 185, 185);
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 20px;
+    border-color: green;
+}

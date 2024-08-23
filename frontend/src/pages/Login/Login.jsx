@@ -1,30 +1,23 @@
-import { useState } from 'react'
+import { useState } from "react";
 import "./Login.css";
-import LogoCunha from "../../assets/images/logo-cunha.jpg"
+import LogoCunha from "../../assets/images/logo-cunha.jpg";
 import { CiUser } from "react-icons/ci";
 import { IoLockOpenOutline } from "react-icons/io5";
 import { IoLockClosedOutline } from "react-icons/io5";
 
+function Login({ authenticateUser }) {
+   const [username, setUsername] = useState("");
+   const [password, SetPassword] = useState("");
 
-
-function Login( {authenticateUser }) {
-   
-   const[username, setUsername] = useState("")
-   const[password, SetPassword] = useState("")
-
-   const hadleLogin = (e) =>{
+   const hadleLogin = (e) => {
       e.preventDefault();
-      authenticateUser(username,password)
-   }
+      authenticateUser(username, password);
+   };
 
    return (
       <div className="page">
          <div className="container">
-            <img
-               src={LogoCunha}
-               alt=""
-               className="logo-cunha"
-            />
+            <img src={LogoCunha} alt="" className="logo-cunha" />
             <form id="login-form" onSubmit={hadleLogin}>
                <div className="login-input-name">
                   <input
@@ -34,9 +27,8 @@ function Login( {authenticateUser }) {
                      value={username}
                      onChange={(e) => setUsername(e.target.value)}
                      placeholder="Nome de Usuario"
-                     
                   />
-                <CiUser />
+                  <CiUser />
                </div>
                <div className="login-input-password">
                   <input
@@ -47,14 +39,12 @@ function Login( {authenticateUser }) {
                      onChange={(e) => SetPassword(e.target.value)}
                   />
                   <IoLockClosedOutline />
-
                </div>
                <p className="error-message"></p>
 
                <button className="submit-login-button" type="submit">
-                  
-               <IoLockOpenOutline />
-               Entrar
+                  <IoLockOpenOutline />
+                  Entrar
                </button>
             </form>
          </div>

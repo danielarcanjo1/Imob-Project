@@ -18,6 +18,7 @@ function AppRoutes() {
          <Route path="cadastrar-Usuario" element={<UserRegistration />} />
          <Route path="audit" element={<Audit />} />
          <Route path="sair" element={<LogOut/>}/>
+         
       </Routes>
    );
 }
